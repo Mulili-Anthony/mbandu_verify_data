@@ -1,0 +1,20 @@
+[
+  {
+    "doc_id": "MCL-REC-2026-1406277",
+    "issued_to": "TED GLOBAL LOGISTICS",
+    "total": 24000.0,
+    "date": "18 JUNE 2026",
+    "sha256": "432cfbaa19d73b783810b1c72604effd31d091c107b9374f5180b67625c3b5a3",
+    "signature": "n1Q4Yxo8rIBgXVd8CKsL_lZIYyEBCyVKojCN6CxlQS2pDxmrfMdBiowRk4gr33_ty5yeE0x1-nf4_SV_hUkOAQ==",
+    "logged_at": "2026-06-18T08:38:02.101427+00:00"
+  },
+  {
+    "doc_id": "MCL-INV-2026-1406286",
+    "issued_to": "TED GLOBAL LOGISTICS",
+    "total": 24000.0,
+    "date": "18 JUNE 2026",
+    "sha256": "0d0c10798771cbb55afa99f6d39a5b8ebd4235833e28bb46440688266b1ac649",
+    "signature": "5oD8bTTo6CF0v_Vj-mgsMwtQAzfauzcljKI8zX4j1vbJlE4Ik_17zxUOIq9Q9DvtFeMabPq13lZ-vMoLSHHaDw==",
+    "logged_at": "2026-06-18T08:45:18.075351+00:00"
+  }
+]
