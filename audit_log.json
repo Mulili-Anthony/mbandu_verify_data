@@ -16,5 +16,14 @@
     "sha256": "0d0c10798771cbb55afa99f6d39a5b8ebd4235833e28bb46440688266b1ac649",
     "signature": "5oD8bTTo6CF0v_Vj-mgsMwtQAzfauzcljKI8zX4j1vbJlE4Ik_17zxUOIq9Q9DvtFeMabPq13lZ-vMoLSHHaDw==",
     "logged_at": "2026-06-18T08:45:18.075351+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00019",
+    "issued_to": "tawawa fruits test",
+    "total": 24000.0,
+    "date": "23 JUNE 2026",
+    "sha256": "53f946244ae22e5e77fb31099fc2aca2b06ef30cd9d12b39e8ee47e4efe87a9c",
+    "signature": "Xjs7L11zW_EhEgH_MISP51rigmpE6aQZUuBSq_ULVIqs6hTFFUBme6abkQnf0cmt32H6uSzqyyNA6mWNM15BBA==",
+    "logged_at": "2026-06-23T12:02:10.246993+00:00"
   }
 ]
