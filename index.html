@@ -353,8 +353,7 @@
 //   const PUBLIC_KEY_B64 = "nZlqYFil02IHh85+AbH...";
 // Copy that entire line and replace the one below.
 // ─────────────────────────────────────────────────────────────────────────────
-const PUBLIC_KEY_B64 = "llujLUCBqTRMzuQ5BUUvcYoCF+3/j2yF2fjqSK68eKA=";
-
+  const PUBLIC_KEY_B64 = "llujLUCBqTRMzuQ5BUUvcYoCF+3/j2yF2fjqSK68eKA=";
 // ─────────────────────────────────────────────────────────────────────────────
 // STEP 2: This URL is already correct for your setup — leave it as-is.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -378,7 +377,7 @@ async function verify() {
   const docId = input.value.trim().toUpperCase();
   if (!docId) { input.focus(); return; }
 
-  if (PUBLIC_KEY_B64 === "llujLUCBqTRMzuQ5BUUvcYoCF+3/j2yF2fjqSK68eKA=") {
+  if (PUBLIC_KEY_B64 === "PASTE_OUTPUT_OF_get_config.py_HERE") {
     showError("Verification page is not yet configured. Run get_config.py and paste the output into index.html.");
     return;
   }
