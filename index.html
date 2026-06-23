@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify Document — Mbandu Stores & Hardware Ltd. </title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --ink:        #1c1a17;
+    --ink-soft:   #5c574e;
+    --paper:      #faf7f1;
+    --line:       #ddd5c5;
+    --orange:     #c9601a;
+    --orange-dk:  #a14a10;
+    --green:      #1f6b3f;
+    --green-bg:   #e7f3ea;
+    --green-line: #b6d9c2;
+    --red:        #a32626;
+    --red-bg:     #fbeaea;
+    --red-line:   #e0b3b3;
+    --amber:      #93650a;
+    --amber-bg:   #faf0db;
+    --amber-line: #dfc98a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    background-image: repeating-linear-gradient(
+      0deg, transparent, transparent 38px,
+      rgba(28,26,23,0.03) 38px, rgba(28,26,23,0.03) 39px
+    );
+  }
+
+  .top-bar {
+    height: 6px;
+    background: linear-gradient(90deg, var(--orange-dk), var(--orange), #e8873a);
+  }
+
+  .page {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 44px 24px 80px;
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    gap: 12px;
+  }
+
+  .brand-name {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+
+  .brand-sub {
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-top: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .header-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+    margin-top: 3px;
+  }
+
+  .rule {
+    height: 1px;
+    background: repeating-linear-gradient(
+      90deg, var(--ink) 0 5px, transparent 5px 9px
+    );
+    opacity: 0.2;
+    margin-bottom: 36px;
+  }
+
+  /* ── Intro ── */
+  .intro-title {
+    font-family: 'Source Serif 4', serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+  }
+
+  .intro-body {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+    margin-bottom: 32px;
+    max-width: 460px;
+  }
+
+  /* ── Form ── */
+  .field-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  .input-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  #docid {
+    flex: 1;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    padding: 12px 14px;
+    background: white;
+    border: 1.5px solid var(--line);
+    border-radius: 3px;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+    transition: border-color 0.15s;
+  }
+
+  #docid:focus { outline: none; border-color: var(--orange); }
+  #docid::placeholder { color: #c0b9ae; }
+
+  .verify-btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    padding: 12px 22px;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+
+  .verify-btn:hover    { background: var(--orange-dk); }
+  .verify-btn:disabled { opacity: 0.45; cursor: wait; }
+
+  .field-hint {
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+  }
+
+  .field-hint code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    background: rgba(28,26,23,0.06);
+    padding: 1px 5px;
+    border-radius: 2px;
+  }
+
+  /* ── Result card ── */
+  #result { margin-top: 28px; display: none; }
+  #result.show { display: block; animation: rise 0.3s ease; }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  .card {
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1.5px solid var(--line);
+    background: white;
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 22px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .card-head.verified { background: var(--green-bg);  border-color: var(--green-line); }
+  .card-head.invalid  { background: var(--red-bg);    border-color: var(--red-line);   }
+  .card-head.notfound { background: var(--amber-bg);  border-color: var(--amber-line); }
+  .card-head.checking { background: #f5f3ee; }
+
+  .card-icon {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; flex-shrink: 0; font-weight: 700;
+  }
+
+  .verified .card-icon { color: var(--green); }
+  .invalid  .card-icon { color: var(--red);   }
+  .notfound .card-icon { color: var(--amber); }
+  .checking .card-icon { color: var(--ink-soft); }
+
+  .card-title {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .verified .card-title { color: var(--green); }
+  .invalid  .card-title { color: var(--red);   }
+  .notfound .card-title { color: var(--amber); }
+
+  .card-sub { font-size: 12px; color: var(--ink-soft); margin-top: 2px; }
+
+  .card-body { padding: 20px 22px; }
+
+  .field-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0ebe0;
+    gap: 16px;
+    font-size: 13.5px;
+  }
+
+  .field-row:last-child { border-bottom: none; }
+
+  .fl {
+    color: var(--ink-soft);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+
+  .fv { font-weight: 500; text-align: right; }
+
+  .footnote {
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+  }
+
+  /* Spinner */
+  .spin {
+    width: 16px; height: 16px;
+    border: 2px solid rgba(0,0,0,0.15);
+    border-top-color: var(--ink-soft);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Footer ── */
+  .footer {
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--ink-soft);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  @media (max-width: 480px) {
+    .input-row { flex-direction: column; }
+    .verify-btn { width: 100%; }
+    .intro-title { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar"></div>
+
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="brand-name">Mbandu Stores & Hardware Ltd.</div>
+      <div class="brand-sub">Document Registry</div>
+    </div>
+    <div class="header-badge">Verification Portal</div>
+  </div>
+
+  <div class="rule"></div>
+
+  <h1 class="intro-title">Verify a receipt or invoice</h1>
+  <p class="intro-body">
+    Every document issued by Mbandu Stores & Hardware Ltd.  carries a cryptographic
+    signature created at the moment it was issued. Enter the document number
+    printed on the receipt or invoice — or scan its QR code — to confirm it
+    is genuine and has not been altered.
+  </p>
+
+  <label class="field-label" for="docid">Document number</label>
+  <div class="input-row">
+    <input
+      type="text" id="docid"
+      placeholder="e.g. MSH-REC-2026-00011"
+      autocomplete="off" spellcheck="false"
+    />
+    <button class="verify-btn" id="btn" onclick="verify()">Verify</button>
+  </div>
+  <p class="field-hint">
+    Printed on every receipt and invoice, e.g.
+    <code>MSH-INV-2026-00042</code>
+  </p>
+
+  <div id="result"></div>
+
+  <div class="footer">
+    <span>Mbandu Stores & Hardware Ltd. · Bomas, Langata Road, Nairobi</span>
+    <span>+254 705 412 532</span>
+  </div>
+
+</div>
+
+<script>
+// ─────────────────────────────────────────────────────────────────────────────
+// STEP 1: Run get_config.py in your terminal, then paste the output below.
+//
+//   python3 get_config.py
+//
+// It will print a line like:
+//   const PUBLIC_KEY_B64 = "nZlqYFil02IHh85+AbH...";
+// Copy that entire line and replace the one below.
+// ─────────────────────────────────────────────────────────────────────────────
+const PUBLIC_KEY_B64 = "llujLUCBqTRMzuQ5BUUvcYoCF+3/j2yF2fjqSK68eKA=";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STEP 2: This URL is already correct for your setup — leave it as-is.
+// ─────────────────────────────────────────────────────────────────────────────
+const AUDIT_LOG_URL = "https://Mulili-Anthony.github.io/mbandu_verify_data/audit_log.json";
+
+// ── DOM refs ──────────────────────────────────────────────────────────────────
+const input  = document.getElementById('docid');
+const btn    = document.getElementById('btn');
+const result = document.getElementById('result');
+
+// Auto-verify when page loads with ?id= in URL (QR codes use this)
+window.addEventListener('DOMContentLoaded', () => {
+  const id = new URLSearchParams(window.location.search).get('id');
+  if (id) { input.value = id; verify(); }
+});
+
+input.addEventListener('keydown', e => { if (e.key === 'Enter') verify(); });
+
+// ── Main verify flow ──────────────────────────────────────────────────────────
+async function verify() {
+  const docId = input.value.trim().toUpperCase();
+  if (!docId) { input.focus(); return; }
+
+  if (PUBLIC_KEY_B64 === "PASTE_OUTPUT_OF_get_config.py_HERE") {
+    showError("Verification page is not yet configured. Run get_config.py and paste the output into index.html.");
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = "Checking…";
+  showChecking();
+
+  try {
+    // Fetch the live audit log from GitHub Pages
+    const res = await fetch(AUDIT_LOG_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error(`Could not load registry (HTTP ${res.status}). The page may still be deploying — try again in a minute.`);
+    const log = await res.json();
+
+    // Find the entry
+    const entry = log.find(e => e.doc_id === docId);
+    if (!entry) { showNotFound(docId); return; }
+
+    // Verify signature in-browser using Web Crypto (Ed25519)
+    const valid = await verifySignature(
+      entry.doc_id, entry.issued_to, entry.total,
+      entry.date, entry.signature
+    );
+
+    valid ? showVerified(entry) : showInvalid();
+
+  } catch (err) {
+    showError(err.message || 'An unexpected error occurred.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Verify';
+  }
+}
+
+// ── Ed25519 signature verification using the browser's Web Crypto API ─────────
+async function verifySignature(docId, issuedTo, total, date, signatureB64url) {
+  // Import the public key (32 raw bytes for Ed25519)
+  const rawKey = base64ToBytes(PUBLIC_KEY_B64);
+  const cryptoKey = await crypto.subtle.importKey(
+    'raw', rawKey,
+    { name: 'Ed25519' },
+    false, ['verify']
+  );
+
+  // Reconstruct the exact same payload that Python's private_key.sign() used
+  const totalFormatted = parseFloat(total).toFixed(2);
+  const payload = `${docId}|${issuedTo}|${totalFormatted}|${date}`;
+  const payloadBytes = new TextEncoder().encode(payload);
+
+  // Convert base64url → bytes (Python uses urlsafe_b64encode)
+  const sigBytes = base64urlToBytes(signatureB64url);
+
+  return crypto.subtle.verify('Ed25519', cryptoKey, sigBytes, payloadBytes);
+}
+
+// ── Result display functions ───────────────────────────────────────────────────
+function showChecking() {
+  result.className = 'show';
+  result.innerHTML = `
+    <div class="card">
+      <div class="card-head checking">
+        <div class="card-icon"><div class="spin"></div></div>
+        <div>
+          <div class="card-title" style="color:var(--ink-soft)">Checking records</div>
+          <div class="card-sub">Fetching and verifying…</div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function showVerified(e) {
+  const logged = e.logged_at
+    ? new Date(e.logged_at).toLocaleString('en-KE', { dateStyle:'long', timeStyle:'short' })
+    : '—';
+  result.className = 'show';
+  result.innerHTML = `
+    <div class="card">
+      <div class="card-head verified">
+        <div class="card-icon">✓</div>
+        <div>
+          <div class="card-title">Authentic document</div>
+          <div class="card-sub">Signature verified — issued by Mbandu Stores & Hardware Ltd.</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="field-row">
+          <span class="fl">Document</span>
+          <span class="fv">${esc(e.doc_id)}</span>
+        </div>
+        <div class="field-row">
+          <span class="fl">Issued to</span>
+          <span class="fv">${esc(e.issued_to)}</span>
+        </div>
+        <div class="field-row">
+          <span class="fl">Amount</span>
+          <span class="fv">KES ${Number(e.total).toLocaleString('en-KE')}</span>
+        </div>
+        <div class="field-row">
+          <span class="fl">Date</span>
+          <span class="fv">${esc(e.date)}</span>
+        </div>
+        <div class="footnote">
+          Recorded in Mbandu Stores & Hardware Ltd.'s registry on ${logged}.
+          The contents of this document match exactly what was originally
+          issued — nothing has been changed since it was signed.
+        </div>
+      </div>
+    </div>`;
+}
+
+function showInvalid() {
+  result.className = 'show';
+  result.innerHTML = `
+    <div class="card">
+      <div class="card-head invalid">
+        <div class="card-icon">✗</div>
+        <div>
+          <div class="card-title">Signature does not match</div>
+          <div class="card-sub">This document may have been altered</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="footnote">
+          The document number exists in Mbandu Stores & Hardware Ltd.'s registry, but the
+          details no longer match the original signature. Do not accept this
+          as proof of payment. Contact Mbandu Stores & Hardware Ltd. directly to confirm.
+        </div>
+      </div>
+    </div>`;
+}
+
+function showNotFound(docId) {
+  result.className = 'show';
+  result.innerHTML = `
+    <div class="card">
+      <div class="card-head notfound">
+        <div class="card-icon">?</div>
+        <div>
+          <div class="card-title">Not found</div>
+          <div class="card-sub">No record of this document number</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="footnote">
+          "<strong>${esc(docId)}</strong>" was not found in Mbandu Stores & Hardware Ltd's
+             registry. Check the number is typed exactly as printed
+          on the document, or contact Mbandu Stores & Hardware Ltd. directly.
+        </div>
+      </div>
+    </div>`;
+}
+
+function showError(msg) {
+  result.className = 'show';
+  result.innerHTML = `
+    <div class="card">
+      <div class="card-head checking">
+        <div class="card-icon" style="color:var(--amber)">!</div>
+        <div>
+          <div class="card-title" style="color:var(--amber)">Could not complete verification</div>
+          <div class="card-sub">${esc(msg)}</div>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ── Crypto helpers ─────────────────────────────────────────────────────────────
+function base64ToBytes(b64) {
+  return Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+}
+
+function base64urlToBytes(b64url) {
+  const b64 = b64url.replace(/-/g, '+').replace(/_/g, '/');
+  const padded = b64 + '='.repeat((4 - b64.length % 4) % 4);
+  return base64ToBytes(padded);
+}
+
+function esc(str) {
+  const d = document.createElement('div');
+  d.textContent = String(str);
+  return d.innerHTML;
+}
+</script>
+
+</body>
+</html>
