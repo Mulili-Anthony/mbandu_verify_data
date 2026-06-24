@@ -70,5 +70,14 @@
     "sha256": "526f006d4b9066e254a8a99ba261de1d442d1d74f09341aa26276efc4508deed",
     "signature": "262mdQzK41KPFIVEShiazTJi-0STkWr05k60rrdcEy26eWfmGH1Extn-uCVH4KNDB4sTFp3pxZbtDazurQDVCg==",
     "logged_at": "2026-06-24T07:26:06.890182+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00046",
+    "issued_to": "ENTICE AFRICA SAFARIS LTD.",
+    "total": 18000.0,
+    "date": "24 JUNE 2026",
+    "sha256": "b5f4d2cec0bef192648f66b948d1c99511aed38328492ca9a7c664027b557f52",
+    "signature": "Z6z_WKFWTG_lRk5hYDnH7PoL6UcoMeZWXzmyq_NvxdXXebT188u_tl28PiwHvOBcJt848Ibh2xLfiGsUOtt7AA==",
+    "logged_at": "2026-06-24T07:26:30.479371+00:00"
   }
 ]
