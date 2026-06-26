@@ -124,5 +124,14 @@
     "sha256": "875f2e9bf6e83695d68d96dc960c3bbd8679fd3261a6a72d0b2a62445138c6db",
     "signature": "qCCIBa6UO2BxiV64toyhxtKGdcwd4NFIyPXxh4joarthjZv0wtoCVIUQNcQrMCMGZrBxy6tombAUBj9EZTg_AQ==",
     "logged_at": "2026-06-26T12:19:48.383853+00:00"
+  },
+  {
+    "doc_id": "MSH-DBN-2026-00028",
+    "issued_to": "TED GLOBAL LOGISTICS test3",
+    "total": 50000.0,
+    "date": "26 JUNE 2026",
+    "sha256": "076b223b12cd8031e56a1bf3a19c366cb5c15d168ad7118d50522a18b9ced0e8",
+    "signature": "LNPI0dSABYfZD39w9aVCtjclnmXCej0EUEmIh8R1HqSCUGQLYAr60JThAvT1fDpSrCYl-JOjjFJfwCobUnrGDA==",
+    "logged_at": "2026-06-26T12:20:48.604038+00:00"
   }
 ]
