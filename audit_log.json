@@ -151,5 +151,14 @@
     "sha256": "c5a5c12ebef0eb06bfa1d969b5e6ccaa7626aa4ce21389574b486e78a08542f1",
     "signature": "vhmvVTJBHJvuXR-xUjeltJuJXacQ3ykHfn_17ibAU_DqXp3OvxY7FKD94ot3RfYf3cmBDSVLs9s4M3QgIS7NBw==",
     "logged_at": "2026-06-26T12:24:25.321987+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00046",
+    "issued_to": "TED GLOBAL LOGISTICS 6",
+    "total": 24000.0,
+    "date": "26 JUNE 2026",
+    "sha256": "02a92a0a6f1a3ee1885c98e5fc9287871ba46c5d2cf66f06d8f5813830840736",
+    "signature": "6qJEsEFeYNZMq9uxd2fr7IrZHSF-xAnzDiFsuAiTfwQ-7t64sxoIdztGTkfpGY5uK1ywfF9jlJoYuST9ZTs_Cw==",
+    "logged_at": "2026-06-26T12:40:24.150806+00:00"
   }
 ]
