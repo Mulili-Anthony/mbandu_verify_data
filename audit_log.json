@@ -196,5 +196,14 @@
     "sha256": "e67b93264ec160079aff9e09a01f1a9c63aaf83fbf53c60da3be8be35c7f33f3",
     "signature": "7ya8-nmfHnxZK1IOYeQ4asUTnz5dP_7MuDUpq6Gku_Y3BmMWevHgUeYBMJRoifw9plKyxlW3GbFL0dkfFhdTCA==",
     "logged_at": "2026-06-27T08:49:18.384874+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00117",
+    "issued_to": "OWEN PETER SIWOLO",
+    "total": 60000.0,
+    "date": "27 JUNE 2026",
+    "sha256": "fab95b01e8cdbc4fd28878ef0b78475fbe728910ea355e68384b1a160ea68890",
+    "signature": "g8cAC-Th7LaFkjTU2c726nuqfWh6BkN--5GgHgUrajf_wKMlaxSqirylH-ly0kjKa9PbMJTsGYCIumjI_BzDAQ==",
+    "logged_at": "2026-06-27T08:54:20.032857+00:00"
   }
 ]
