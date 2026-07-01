@@ -232,5 +232,14 @@
     "sha256": "99db227a9c950a92a64f08cc34a0a26b31e0d5c3df114190e3403b9f65805510",
     "signature": "cIDjG-ptg5RWiLsw6dQyEOCbtrhfb9PLvgXSCDuvaIM2q6OkW8Mk_Fo1-aq_3udRKS_olOG0RM3WE3kCrUz9Cw==",
     "logged_at": "2026-07-01T12:22:27.320707+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00108",
+    "issued_to": "KENYA BUSH TRACKS",
+    "total": 23200.0,
+    "date": "1 JULY 2026",
+    "sha256": "c18a4a3bc072951c3c0cf801127f98885d4450736db66bf8867cc99347a99daf",
+    "signature": "sBlrg26vZHFRZv1RG-0anY74iU2w9kc0id042UO6L_OtAPTsypuI0XgtWgpF4YYvD9WoDczNqy4kW9qJaFjXBQ==",
+    "logged_at": "2026-07-01T12:34:22.650284+00:00"
   }
 ]
