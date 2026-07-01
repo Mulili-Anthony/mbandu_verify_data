@@ -268,5 +268,14 @@
     "sha256": "8d467acefbaa42c6b176962e996c04dcfd5476ded39713ba2869df9fa969dcb2",
     "signature": "KoG4D0udhXAWBwT6hmn4J5lvy2iuWiQZDjBA5z7rrmtbwX7-8z72PzAUrpm3p-ESfMvOwnjyWogHtGbX5zjuBg==",
     "logged_at": "2026-07-01T12:49:34.558250+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00135",
+    "issued_to": "POLYVALENT ENTERPRISES LTD.",
+    "total": 98600.0,
+    "date": "1 JULY 2026",
+    "sha256": "492ba1b02935dcc3ad1d218a58bc3dd8e8ef855bc2a61a6aa8c40f5dc3f79a78",
+    "signature": "JA0Ap2SDfFyPM3ENChCL7P6ybFowwnxsCo1qpVKNDLCFE4jSzcpy_t7IwK6NnbobllKu9frMkIyEmab8tGLhCQ==",
+    "logged_at": "2026-07-01T13:00:24.948671+00:00"
   }
 ]
