@@ -295,5 +295,14 @@
     "sha256": "5db4cf0f0c51ece6cae2891c32ad9a01ac6fe937230b9dd47dff1e2b48036868",
     "signature": "xDlB07RRo-j2pNjI6qFAMovYWRooIWCXMvME4w-xsUhz6TmiDW2vjJtHRfEGK5SdJ6BZjmwcSGW-o1GX_IDqBA==",
     "logged_at": "2026-07-01T13:03:13.940420+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00162",
+    "issued_to": "SAACHIN INVESTMENTS LTD.",
+    "total": 30000.0,
+    "date": "1 JULY 2026",
+    "sha256": "8b120e1bd171de61ac2aace26affe420de4944b0828001c6a6f395ab2b79ba81",
+    "signature": "Si99BYys-8KrITfZHkdpL2Ifie-SuG88wFONkTdnMEg0U7sBCTNEwuots2SUYa-0sHqv27iGuhF35moeMYlYDA==",
+    "logged_at": "2026-07-01T13:04:44.091538+00:00"
   }
 ]
