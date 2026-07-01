@@ -349,5 +349,14 @@
     "sha256": "de28b07fad313408c0a6de666f075a7e1d3944b7e102d04cbb596b7dd155224b",
     "signature": "QMlgtzPXzynRYZ-jWPzvF9Qz6QLqwB3P2X6RxPQRhuSgfXQ4NQ0xRkC2HW0NB3tnH7LQ0aBMcpgZoTyPH1NvAg==",
     "logged_at": "2026-07-01T13:42:05.361649+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00206",
+    "issued_to": "MACKAY AFRICA LTD.",
+    "total": 118320.0,
+    "date": "1 JULY 2026",
+    "sha256": "bb13e44bc53d20dfd0a4fe3d69e2595102a59010345cb4d59864e7c0234f46d5",
+    "signature": "Nttt9UHRKFjIeU1K3wPkGWgYM2SJQYhvehD_J5Oem8v_-bWJD3_LLBEpLiNt-SiehNLCT_v3hwL5rW-b3KLMCw==",
+    "logged_at": "2026-07-01T13:42:22.923374+00:00"
   }
 ]
