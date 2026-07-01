@@ -322,5 +322,14 @@
     "sha256": "ea62edf8e6c884ad8e3bfa690168d2244ea59854b635d495243ac24f9f6e2e65",
     "signature": "mrqG9n8iMJFwnVXQtDoN2RZVSw6RXqEbSan9rCGJKpxhYNEIUCaQn-YtRMI1yTZT2xWDZS7nL5BaVdfxGGZjAQ==",
     "logged_at": "2026-07-01T13:06:49.406117+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00171",
+    "issued_to": "SOLAR POINTS TECHNOLOGY LTD.",
+    "total": 100000.0,
+    "date": "1 JULY 2026",
+    "sha256": "0eef42fc6565a94909f4ee71286bb706ddafb5499e985da017ef19f488db2793",
+    "signature": "36QUQz86Hu4y6l6Z33FJ3FlwZRV4yzmYADPX1PlO--EFh0CStskuubNKRP7UcQXgApQdb-BIRkacRp9I-LjpDQ==",
+    "logged_at": "2026-07-01T13:07:41.482289+00:00"
   }
 ]
