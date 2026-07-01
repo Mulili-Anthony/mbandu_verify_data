@@ -250,5 +250,14 @@
     "sha256": "97020fec9388ca02a4142d00033697111b45ad63e43bb9cc05b0289e9ff0bbda",
     "signature": "UMuKO_CVGgHFTh4Pvju6UW0gAPE-1hlLamfdR3PB2LAg9DHqs9F1JHC2A78N_NV0JcS9noKIrqrJk5WRiWFjCg==",
     "logged_at": "2026-07-01T12:37:35.715770+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00126",
+    "issued_to": "FINESSE PC.",
+    "total": 17400.0,
+    "date": "1 JULY 2026",
+    "sha256": "a02ad3d655c06b827e3e993c78d0c33cee537d80fe74c93c2c80406a51450944",
+    "signature": "V9nIftY4upoa1DfPbOaC_ZM3mEw4TX1fI5ZpPcoId3zJVn_05nabGzsDJtj5QZaOdCvJ6c1YvyNXVreNDyhoBQ==",
+    "logged_at": "2026-07-01T12:40:36.078902+00:00"
   }
 ]
