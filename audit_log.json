@@ -358,5 +358,14 @@
     "sha256": "bb13e44bc53d20dfd0a4fe3d69e2595102a59010345cb4d59864e7c0234f46d5",
     "signature": "Nttt9UHRKFjIeU1K3wPkGWgYM2SJQYhvehD_J5Oem8v_-bWJD3_LLBEpLiNt-SiehNLCT_v3hwL5rW-b3KLMCw==",
     "logged_at": "2026-07-01T13:42:22.923374+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00215",
+    "issued_to": "TED GLOBAL LOGISTICS.",
+    "total": 24000.0,
+    "date": "1 JULY 2026",
+    "sha256": "5556c0c356f0d4c9e0f0c5a3bf01e3cd47337fa0a60acab972b6a3f2266f92d2",
+    "signature": "A07T1bM_WLsvaEJxXCwmKaNmlL8kNYIyCYBnriqjbNuda0D0UqaQx8VB_Ug29nNoBFJUPj39VjK00-qL6-RSDA==",
+    "logged_at": "2026-07-01T13:52:05.343466+00:00"
   }
 ]
