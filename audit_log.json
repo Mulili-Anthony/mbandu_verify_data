@@ -277,5 +277,14 @@
     "sha256": "492ba1b02935dcc3ad1d218a58bc3dd8e8ef855bc2a61a6aa8c40f5dc3f79a78",
     "signature": "JA0Ap2SDfFyPM3ENChCL7P6ybFowwnxsCo1qpVKNDLCFE4jSzcpy_t7IwK6NnbobllKu9frMkIyEmab8tGLhCQ==",
     "logged_at": "2026-07-01T13:00:24.948671+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00144",
+    "issued_to": "CAPITAL SHELTER LTD.",
+    "total": 55000.0,
+    "date": "1 JULY 2026",
+    "sha256": "f3e16f1777c18226e38f3dc4f00ebebdef8da07a6e6158aa29ecbeeae18e0d4c",
+    "signature": "cz-L55FtyfBmKjiFidTOsC5gf9-iMCUQygEnhQafmbs11RR7h3vTl04mtOaNckMAwd4FZm7m6mRBQfNZYJGWDQ==",
+    "logged_at": "2026-07-01T13:02:11.237109+00:00"
   }
 ]
