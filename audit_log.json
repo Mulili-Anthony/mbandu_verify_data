@@ -286,5 +286,14 @@
     "sha256": "f3e16f1777c18226e38f3dc4f00ebebdef8da07a6e6158aa29ecbeeae18e0d4c",
     "signature": "cz-L55FtyfBmKjiFidTOsC5gf9-iMCUQygEnhQafmbs11RR7h3vTl04mtOaNckMAwd4FZm7m6mRBQfNZYJGWDQ==",
     "logged_at": "2026-07-01T13:02:11.237109+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00153",
+    "issued_to": "AGATE LEARNING CENTRE.",
+    "total": 90000.0,
+    "date": "1 JULY 2026",
+    "sha256": "5db4cf0f0c51ece6cae2891c32ad9a01ac6fe937230b9dd47dff1e2b48036868",
+    "signature": "xDlB07RRo-j2pNjI6qFAMovYWRooIWCXMvME4w-xsUhz6TmiDW2vjJtHRfEGK5SdJ6BZjmwcSGW-o1GX_IDqBA==",
+    "logged_at": "2026-07-01T13:03:13.940420+00:00"
   }
 ]
