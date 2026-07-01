@@ -259,5 +259,14 @@
     "sha256": "a02ad3d655c06b827e3e993c78d0c33cee537d80fe74c93c2c80406a51450944",
     "signature": "V9nIftY4upoa1DfPbOaC_ZM3mEw4TX1fI5ZpPcoId3zJVn_05nabGzsDJtj5QZaOdCvJ6c1YvyNXVreNDyhoBQ==",
     "logged_at": "2026-07-01T12:40:36.078902+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00126",
+    "issued_to": "DOCKS INVESTMENTS SUPPLIES & CO. LTD",
+    "total": 193200.0,
+    "date": "1 JULY 2026",
+    "sha256": "8d467acefbaa42c6b176962e996c04dcfd5476ded39713ba2869df9fa969dcb2",
+    "signature": "KoG4D0udhXAWBwT6hmn4J5lvy2iuWiQZDjBA5z7rrmtbwX7-8z72PzAUrpm3p-ESfMvOwnjyWogHtGbX5zjuBg==",
+    "logged_at": "2026-07-01T12:49:34.558250+00:00"
   }
 ]
