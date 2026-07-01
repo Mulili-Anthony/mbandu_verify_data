@@ -214,5 +214,14 @@
     "sha256": "f6d9286e5a2f6d8ac0982cf7e78a6c5774d9b1ab2942ee1acc547ccc51035d1c",
     "signature": "HZpDxRDMjLv9AmKMr2nL_iL6bqidH_ATtn3unAxK2FAL_p66cH7DvFKYs3l6n8I2QC9Dn37VZAup5g30lNCbDw==",
     "logged_at": "2026-07-01T12:16:31.602934+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00082",
+    "issued_to": "Enserve Limited\n.",
+    "total": 121800.0,
+    "date": "1 JULY 2026",
+    "sha256": "41e56ef93ab7dbc681911bacdb94e9c4b2609ff1d4fb38a8f10b86e19d437d03",
+    "signature": "HVeNl0nxicP0CPiP6LxxseDRPefj3hJUFPmkSzDK4Xy7UbO2XoEhm6QyqSqwtRbl12Mc1j36RogfZP2uM85XBQ==",
+    "logged_at": "2026-07-01T12:20:37.284539+00:00"
   }
 ]
