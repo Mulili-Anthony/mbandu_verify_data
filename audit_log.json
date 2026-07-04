@@ -385,5 +385,14 @@
     "sha256": "609ecda546368c64d1507e3873236d4bb447e5dd348c49172398a7e5ec1fa295",
     "signature": "kyoS-S5rpHP2xovw9xD6KCo2vcvrUeASwtTGOCJbHjVbBdk0m07KcqL4KKv6R5Q8kb0PYU5CD8jXh10MP8JdCg==",
     "logged_at": "2026-07-02T09:19:19.686807+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00233",
+    "issued_to": "CHOCOLATE CITY LTD.",
+    "total": 13900.0,
+    "date": "4 JULY 2026",
+    "sha256": "360c2160a0cb2ac614b79db5e7d9d0bc967abc74d3af0040faaf8ce38507a0ef",
+    "signature": "cnuWCG1ODQeRa7Fxio4A3OlXkyStfp_UYUSafeoRmiIdvrq4xKCpiKLEgCI0AkYPGCINXcTKv69dd_svFClzCg==",
+    "logged_at": "2026-07-04T12:15:05.029770+00:00"
   }
 ]
