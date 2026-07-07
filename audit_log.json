@@ -394,5 +394,14 @@
     "sha256": "360c2160a0cb2ac614b79db5e7d9d0bc967abc74d3af0040faaf8ce38507a0ef",
     "signature": "cnuWCG1ODQeRa7Fxio4A3OlXkyStfp_UYUSafeoRmiIdvrq4xKCpiKLEgCI0AkYPGCINXcTKv69dd_svFClzCg==",
     "logged_at": "2026-07-04T12:15:05.029770+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00162",
+    "issued_to": "MC FRYS LTD.",
+    "total": 55000.0,
+    "date": "7 JULY 2026",
+    "sha256": "43d9b8e2d4ce4848846b411c332835732fe37fcd08504e77ea141144c7933fc1",
+    "signature": "gmfF15ZsPbmdFYC6zt_PKbDXMkZ_Y64A0oUUVEKyRdADCbxmsTGtbcMqzjBCspRjzWN-rVSZfit97BrwcPXaAA==",
+    "logged_at": "2026-07-07T12:06:36.253703+00:00"
   }
 ]
