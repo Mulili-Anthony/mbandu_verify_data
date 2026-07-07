@@ -403,5 +403,14 @@
     "sha256": "43d9b8e2d4ce4848846b411c332835732fe37fcd08504e77ea141144c7933fc1",
     "signature": "gmfF15ZsPbmdFYC6zt_PKbDXMkZ_Y64A0oUUVEKyRdADCbxmsTGtbcMqzjBCspRjzWN-rVSZfit97BrwcPXaAA==",
     "logged_at": "2026-07-07T12:06:36.253703+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00242",
+    "issued_to": "MC FRYS LTD.",
+    "total": 55000.0,
+    "date": "7 JULY 2026",
+    "sha256": "6b10307e9aca61f1b8a2ddd7b81ac46ecda6de7e9c842dcfd9d73ccdfacbcdde",
+    "signature": "x5qQ2pwMlqiuS6CK2c0YpkdJ0pAuHN9w2IJMKF5PkpLoxWnFJ-1SR5bfhUnEyNtv_13CNQDVPyoC80rqsNlDCw==",
+    "logged_at": "2026-07-07T12:07:25.740193+00:00"
   }
 ]
