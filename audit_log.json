@@ -430,5 +430,14 @@
     "sha256": "ad7233f70872e1536e929f79bd0ba6333e4a55462a50988590d38dec1bd0bd96",
     "signature": "Nhj4_wjHfLb2hu1ys6hHp84ui-tfCofpJ1er9kqMVdWRhXrkuFNWFd8D4qpEqADrk3EvEty67B0qwoEmiyRRCA==",
     "logged_at": "2026-07-07T12:36:49.184638+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00180",
+    "issued_to": "BETTY MACHARIA.",
+    "total": 23200.0,
+    "date": "7 JULY 2026",
+    "sha256": "2624a31bc67568875ffd9ddbf311ac38884c1729ba69a2cafb9355f17bf9fbe0",
+    "signature": "ruv_Vnw8Ej6v7sf_UxiWopabxiSkXC00bK2Zyzqev8aTVj5zD80gFm5IixfSLL9t9UAfcC0rHdZiMZ08ophuBg==",
+    "logged_at": "2026-07-07T12:47:32.091632+00:00"
   }
 ]
