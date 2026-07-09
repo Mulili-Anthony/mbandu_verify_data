@@ -448,5 +448,14 @@
     "sha256": "63331e06f3378415db2e40cf6629961d5ddef54275db588593e6a98fc65d266e",
     "signature": "bV7VZeLHBrcsm_tFowJFUDNQI9_OtXR7suxv1RrsdqKBMaf4h3skSbWEHPzLp1H2XymzkJOq1gE7rOxT7jITCQ==",
     "logged_at": "2026-07-09T12:59:41.459527+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00279",
+    "issued_to": "HEATHER & RODGERS LLP.",
+    "total": 45000.0,
+    "date": "9 JULY 2026",
+    "sha256": "3446fc386ad4822cd552177095e1b322512387a5b7443bedc5ade1a96caf7945",
+    "signature": "Vg78e9iSoMlpxxFbJuKW6CMJV5siDWP-JFM4BOKTNPbM_H6qgdpFOvB0GTj2704X8L6k8JRYgvBY0cdNpUZLAA==",
+    "logged_at": "2026-07-09T13:00:58.949541+00:00"
   }
 ]
