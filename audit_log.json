@@ -475,5 +475,14 @@
     "sha256": "e3ce3b38149360dd8c95fba00b76b0cbafc9cc88c6070e699934f05de38c1e31",
     "signature": "4M9It-ITyxHBi2GH_ewIAMqThBtMla0drQuJAzy6mA4ZZGodr3RYqyDS4xF8TogOwWQ_cvn9hUCYaZ8mopEqAw==",
     "logged_at": "2026-07-11T07:54:19.048640+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00206",
+    "issued_to": "TED GLOBAL LOGISTICS.",
+    "total": 24000.0,
+    "date": "11 JULY 2026",
+    "sha256": "a8e288090c23e567d63c27376f764ec81c93ae7f71a7f115ff723e901a8a85c6",
+    "signature": "16uwlNA0BX6Rw_mndArYStc85DYyN7QSP5ONHP0sk7KlFB3OjLFxpZoMnchuTLioKS_yrA8eckt59SYIEaRUAQ==",
+    "logged_at": "2026-07-11T07:56:44.168211+00:00"
   }
 ]
