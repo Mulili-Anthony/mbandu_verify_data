@@ -484,5 +484,14 @@
     "sha256": "a8e288090c23e567d63c27376f764ec81c93ae7f71a7f115ff723e901a8a85c6",
     "signature": "16uwlNA0BX6Rw_mndArYStc85DYyN7QSP5ONHP0sk7KlFB3OjLFxpZoMnchuTLioKS_yrA8eckt59SYIEaRUAQ==",
     "logged_at": "2026-07-11T07:56:44.168211+00:00"
+  },
+  {
+    "doc_id": "MSH-WAT-2026-00019",
+    "issued_to": "MCFRYS TEST 1",
+    "total": 3000.0,
+    "date": "11 JULY 2026",
+    "sha256": "641ee8df06adb01fdef345e8bf5ba6e28ad46536182873918f6d51a934cdff95",
+    "signature": "JsmE_4KecUZ3TT5iaQKVcutQyjqVicRlordNNpLJTOPKTTtIhkSCscaNLtaS7vcjAH-Do6FgowoY8mssx8gkAg==",
+    "logged_at": "2026-07-11T10:36:16.804167+00:00"
   }
 ]
