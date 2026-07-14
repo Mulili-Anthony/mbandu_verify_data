@@ -538,5 +538,14 @@
     "sha256": "0e62fb1f9e8c6fee1cefccbed0d178e74e3246bc10d2e69cbef92677f29e2159",
     "signature": "5Hu41z85Wd8tQ7hpmbLXQ3LFR5XTyeSkQc7fl0weergDDc5wvunx2q5Ng0cNuLsYZYjgFQfmwFs-GHkMPE0tAQ==",
     "logged_at": "2026-07-14T07:11:33.718904+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00233",
+    "issued_to": "CAPITAL SHELTER LTD.",
+    "total": 55000.0,
+    "date": "14 JULY 2026",
+    "sha256": "4cbb313362a2b537ddd3bc4ca20e2b3632dfc7e4a25b54cb2de8004da6fbd473",
+    "signature": "b3b1kYqDAIjtX3ap3TbRw0lUGM5jRq8PKsmdwY_F3NotbANL9hzViDI9iBKkti9twg-BbOdAta3CXV6fLxh9Aw==",
+    "logged_at": "2026-07-14T07:14:58.310328+00:00"
   }
 ]
