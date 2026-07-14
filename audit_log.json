@@ -520,5 +520,14 @@
     "sha256": "6337fe57245c92f57c96a7ff1be11699f2ddbdad27239e2a6af35180dbacd01d",
     "signature": "2MUoVybPf6hmScsabyukK2p-Rx9CoBmfFCeAJGoRWZ9sIQPqmaZw0WHAdOkBx4HZV13-ACjfxGJ8-pTQxFFmBA==",
     "logged_at": "2026-07-13T08:09:16.095383+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00215",
+    "issued_to": "COMPANY NAME",
+    "total": 24000.0,
+    "date": "14 JULY 2026",
+    "sha256": "33b1d50cce6af97162ed7498fdc1c5de9dda4cbeb316ac13d2abf2af938d73a1",
+    "signature": "0DiZQQ38dZfdreuSktaeM3p8eqJkz4xpbg2KrfbLSEHKXGNBVdhqep7XeZdqC0ABAV3TQhQhSNyuUXBkI2dTAQ==",
+    "logged_at": "2026-07-14T07:09:07.497372+00:00"
   }
 ]
