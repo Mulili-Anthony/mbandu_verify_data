@@ -556,5 +556,122 @@
     "sha256": "6a2db4d6f442345ce6b4694f4a969758e694ae0b1f0ecacf5e27bd32674f4ef5",
     "signature": "Ih4zLbZaWVyR-IB_WHGv8RdTtTSdouPulBYjRnXrN1DWzTCpm4WQlQmY3sEARpY55CJCHYsmkReELc2Mnar8AQ==",
     "logged_at": "2026-07-14T08:54:25.060334+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00251",
+    "issued_to": "ELITE LODGIT LTD.",
+    "total": 107448.0,
+    "date": "25 JULY 2026",
+    "sha256": "9c6203faad25161ec91b16d3997cdc1a1d309726eeeeeb9d7fc8c29efab9c9e6",
+    "signature": "p-Le-xK3OQPTNMreknpj6AW8kmOzye2DpS-6h5TrSoYpduqx1zdT9HV-Dh6H22HqDzlf-S0NI57NIQJLf9CzBw==",
+    "logged_at": "2026-07-25T11:53:13.300803+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00260",
+    "issued_to": "ELITE LODGIT LTD.",
+    "total": 94424.0,
+    "date": "25 JULY 2026",
+    "sha256": "e4afbc581f3d593137c53f4425c2801c3d2c1a5d05b915d17b80c8caf4cecb09",
+    "signature": "VV27SDXerOFBtlrpxrRsTpkk2CfbdIAqCb2VESZCvPwki1TjB4Yb1JY8M0A8CYWHt1h8e1JFoLI5IqTKSSJNDg==",
+    "logged_at": "2026-07-25T11:55:05.005018+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00279",
+    "issued_to": "KENYA BUSH TRACKS.",
+    "total": 23200.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "798f6725c37352b25bc73eabf3c810ff1ce08c5a20d4cc304e406e96ab2c5185",
+    "signature": "LFsz-wh8Rzxk432pnFDyhrHH3HOu4SRRFGLzfhfv0ujFHSm-4PZ3y_tX5PkuwPMX_TCJdR2C2pOeoFeC6AK_Dw==",
+    "logged_at": "2026-08-03T11:02:07.553113+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00288",
+    "issued_to": "FINESSE PC.",
+    "total": 17400.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "fc699f1608e3b0acb150335fa7764279d11af78d27572f39bcf9805a1e5151bb",
+    "signature": "Wjvm4cQ1g9wc0t-h2qOuLIHTiNXFfEE3NjDO4Gz_fV_i7SKtIQ2lC8Oms7Lg6cCSCV2aY2tU_T6CTvsL4q7DAg==",
+    "logged_at": "2026-08-03T11:06:03.688964+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00297",
+    "issued_to": "POLYVALENT ENTERPRISES LTD.",
+    "total": 98600.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "0d58e8a49f37f0c5ca1c2c0f8c2dc8fb7a57911cfbdc54f83a45dc7ff0e7763f",
+    "signature": "Fw5gI8SD859ndPnyyMeCgs5gIH6azv-Ome9TY1tnPKXEYdXxWFPHiKXbRSiB9-zLL6Afb04ADycEGoT7DpnrDg==",
+    "logged_at": "2026-08-03T11:07:28.174753+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00304",
+    "issued_to": "PETZONE ENTERPRISES LTD.",
+    "total": 104400.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "f7b2ec5aa6c4454543334ec9958737493c10f8a64df5f78f356c5d2456bc3e1a",
+    "signature": "soARsujeesiFqHWiKBEScc2lfmyjDknj-dqp0x4bwYFa1VcZCHVpNaV2zf6ibly69jiMq_dgHf0IJDrTxtYIDw==",
+    "logged_at": "2026-08-03T11:14:28.921699+00:00"
+  },
+  {
+    "doc_id": "MSH-WAT-2026-00055",
+    "issued_to": "CHOCOLATE CITY LTD.",
+    "total": 17000.1,
+    "date": "3 AUGUST 2026",
+    "sha256": "0d133a3b0245e759806378a0c4dab1ab6ba80fa64dcb960a73c604692dd98c11",
+    "signature": "T26_1NhkH_56geNrGsPQSPwVaUzL_nFEMdh6t9recb0_QZQiFN_rpiY6WECoJsx8oE9o6Ka_jSubQfHOXLqFDA==",
+    "logged_at": "2026-08-03T11:18:28.076720+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00297",
+    "issued_to": "TED GLOBAL LOGISTICS.",
+    "total": 24000.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "83c93f8531f0ed766b95b7581ea61e5447c7cf5b4a2c29bc7af88f68f73bb156",
+    "signature": "xW4dYXMcxozHojotTi8HE0-rBFMa2yrFnp6zsO0s3U7KGw2pmh_F_P3VvygsxlL88rMkCxv2tCEvzMsMvVC_Cg==",
+    "logged_at": "2026-08-03T11:20:36.249351+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00304",
+    "issued_to": "CAPITAL SHELTER LTD.",
+    "total": 24000.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "f4c705a4f36d9ef9e300c3c766118e9c372c3460af8e0bb25b33e093f3c321ec",
+    "signature": "ZDke2pckRt6Xx7NQxnuC4aG5NKLMJG3s0CuX7PtwMSYQt9GaEyk0GPf8sNF6ZFiILpOs33g0Wm5xNx4AI18QBA==",
+    "logged_at": "2026-08-03T11:21:03.998579+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00313",
+    "issued_to": "CAPITAL SHELTER LTD.",
+    "total": 55000.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "38cc434277c3ea501395d297d69fc44a3ccb04922fae6287b09282d51e672f9d",
+    "signature": "cLRnG6g7qYhQgRovf68n9fJCS_y21k2Z3-Xygo1xG6PUdxlMzJ91yLNOORmQA36GfM1H_QlzjG48vqysjy0_Dg==",
+    "logged_at": "2026-08-03T11:21:15.818413+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00322",
+    "issued_to": "AGATE LEARNING CENTRE.",
+    "total": 90000.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "952469a2ac67313f0a3d3140cad4be70237c581a10c1e19075288bd7efa83b2e",
+    "signature": "yFX0f5XXYpggtSn1E3zTqxIsPILdt_t-eeY7ntz4kpxnetLqqfEl7I89GSopGzYtZYUwLziD8pkfhaR8cNYGAg==",
+    "logged_at": "2026-08-03T11:24:59.000430+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00331",
+    "issued_to": "SAACHIN INVESTMENTS LTD.",
+    "total": 30000.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "f23b759b197a1fb82124ae4db48e345f30d8d545d12c0cae8f6f60169c434371",
+    "signature": "llhkXy4qO0CUo8wXz4_daZwHuE-bhIBFfJQ4wHXn-9LK2Jo3A-QGL-tah6wAST3YkB5axXnWIIcidcB3JQowBQ==",
+    "logged_at": "2026-08-03T11:27:11.956468+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00313",
+    "issued_to": "SAACHIN INVESTMENTS LTD.",
+    "total": 30000.0,
+    "date": "3 AUGUST 2026",
+    "sha256": "f858331eb4186f2b81c366ffbf63b29144f37dd82bd0fb92abe232d47de24147",
+    "signature": "Wp2NRJGRF8rpHcqp6QRqq-sXXbs3Xt2Bcs0-G_zCrqR8MZefv3u2uz8TLtjvuwxRV02LV7XhnLzOWJ-TXVMWBg==",
+    "logged_at": "2026-08-03T11:27:39.882219+00:00"
   }
 ]
