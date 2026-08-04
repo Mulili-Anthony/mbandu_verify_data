@@ -718,5 +718,14 @@
     "sha256": "2e9cb9863306a58d4f8234106eaebfecf717609e47f42b53b886d78ac827cf14",
     "signature": "HnU_1-CzU8evciNoovyxgGszj5sjMDItIfs9ZVO2GXaNno-zeYTJDxeYkAsIbB8-1ZNngu_mglAwv6j41aVVDQ==",
     "logged_at": "2026-08-04T15:18:25.056218+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00368",
+    "issued_to": "CHRIST CO-WORKERS FELLOWSHIP.",
+    "total": 61000.0,
+    "date": "4 AUGUST 2026",
+    "sha256": "172adffbaecfebc1578316ae5dbef0ec25159ee968e2c1fe9b179565b65d5712",
+    "signature": "TM-pNZU_CUXmF7nwukzp0n170y7pKNZ1t7XizbtwaAvAHmqlkLweVEIRCA0w9JBRa9w6K40cbpwV9KD-B7SSDQ==",
+    "logged_at": "2026-08-04T15:24:12.988418+00:00"
   }
 ]
