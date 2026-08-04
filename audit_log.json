@@ -709,5 +709,14 @@
     "sha256": "b5cbbab3230088e30cc0fa10a3306efda0312e8e1e3836565390133d2dc74813",
     "signature": "c75Qxxyktm5tjV20ik2QrR_xMHaFaMZXSQPDqoSCUZcrh_RPoFEg2vrOvsSingZnFBWG_k_TeMS5E7vTc8KiDA==",
     "logged_at": "2026-08-04T15:14:17.666020+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00359",
+    "issued_to": "WINNERS CHAPEL INTL.",
+    "total": 150000.0,
+    "date": "4 AUGUST 2026",
+    "sha256": "2e9cb9863306a58d4f8234106eaebfecf717609e47f42b53b886d78ac827cf14",
+    "signature": "HnU_1-CzU8evciNoovyxgGszj5sjMDItIfs9ZVO2GXaNno-zeYTJDxeYkAsIbB8-1ZNngu_mglAwv6j41aVVDQ==",
+    "logged_at": "2026-08-04T15:18:25.056218+00:00"
   }
 ]
