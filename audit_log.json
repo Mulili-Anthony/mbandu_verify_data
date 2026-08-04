@@ -727,5 +727,14 @@
     "sha256": "172adffbaecfebc1578316ae5dbef0ec25159ee968e2c1fe9b179565b65d5712",
     "signature": "TM-pNZU_CUXmF7nwukzp0n170y7pKNZ1t7XizbtwaAvAHmqlkLweVEIRCA0w9JBRa9w6K40cbpwV9KD-B7SSDQ==",
     "logged_at": "2026-08-04T15:24:12.988418+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00377",
+    "issued_to": "BEATRICE WANGUI.",
+    "total": 23200.0,
+    "date": "4 AUGUST 2026",
+    "sha256": "b466e48f99d62abe4d8cb3f03d14a8e75cb3e1ae630c95d42c748351e73ccec0",
+    "signature": "brJqIKp1s9NbpGysvsbqXvKwquKnENCDu68rI8XdfUbYS9OPoBj0-KZrjAtjrLyHWcZvIDDPKQWdBh3Eh0zWAw==",
+    "logged_at": "2026-08-04T15:42:27.461404+00:00"
   }
 ]
