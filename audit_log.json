@@ -700,5 +700,14 @@
     "sha256": "d0dadf67f536a9e0e5172b6c97e190876a74f216c170dfb209e9fd04de4a5833",
     "signature": "_EBo-lfZlD1oRxqYZ1kPJ-J_q4oUI-rwHNLkU-LeQRyQuusOnDT0ZpRWnFtD6WkBTInNbAXS1mBhZ3kl6V15CQ==",
     "logged_at": "2026-08-04T15:14:08.283678+00:00"
+  },
+  {
+    "doc_id": "MSH-REC-2026-00340",
+    "issued_to": "COPY JOINT LTD.",
+    "total": 35000.0,
+    "date": "4 AUGUST 2026",
+    "sha256": "b5cbbab3230088e30cc0fa10a3306efda0312e8e1e3836565390133d2dc74813",
+    "signature": "c75Qxxyktm5tjV20ik2QrR_xMHaFaMZXSQPDqoSCUZcrh_RPoFEg2vrOvsSingZnFBWG_k_TeMS5E7vTc8KiDA==",
+    "logged_at": "2026-08-04T15:14:17.666020+00:00"
   }
 ]
