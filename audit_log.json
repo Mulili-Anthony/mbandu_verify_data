@@ -673,5 +673,14 @@
     "sha256": "f858331eb4186f2b81c366ffbf63b29144f37dd82bd0fb92abe232d47de24147",
     "signature": "Wp2NRJGRF8rpHcqp6QRqq-sXXbs3Xt2Bcs0-G_zCrqR8MZefv3u2uz8TLtjvuwxRV02LV7XhnLzOWJ-TXVMWBg==",
     "logged_at": "2026-08-03T11:27:39.882219+00:00"
+  },
+  {
+    "doc_id": "MSH-INV-2026-00340",
+    "issued_to": "WHITE HORSE TOURS.",
+    "total": 25000.0,
+    "date": "4 AUGUST 2026",
+    "sha256": "2aa52ae6226b14d8f598d58f169c5cd36c4f21e850261ef0ab65bc12bd5bec52",
+    "signature": "DdyPhrY1m3NCO4eqifUh7mDgKibc8qcBS98hvv_frvlsIsct20w5EQmqirRG_mmgxAFfFP3od5_NKeUyEWKxBA==",
+    "logged_at": "2026-08-04T08:32:13.300675+00:00"
   }
 ]
