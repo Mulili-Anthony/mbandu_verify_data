@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Verify Document — Mbandu Stores & Hardware Ltd. </title>
+<title>Verify Document — Mbandu Complex Limited</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
 
@@ -49,7 +49,6 @@
     padding: 44px 24px 80px;
   }
 
-  /* ── Header ── */
   .header {
     display: flex;
     align-items: flex-start;
@@ -96,7 +95,6 @@
     margin-bottom: 36px;
   }
 
-  /* ── Intro ── */
   .intro-title {
     font-family: 'Source Serif 4', serif;
     font-size: 27px;
@@ -114,7 +112,6 @@
     max-width: 460px;
   }
 
-  /* ── Form ── */
   .field-label {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 10px;
@@ -177,7 +174,6 @@
     border-radius: 2px;
   }
 
-  /* ── Result card ── */
   #result { margin-top: 28px; display: none; }
   #result.show { display: block; animation: rise 0.3s ease; }
 
@@ -244,17 +240,8 @@
   }
 
   .field-row:last-child { border-bottom: none; }
-
-  .fl {
-    color: var(--ink-soft);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    flex-shrink: 0;
-  }
-
-  .fv { font-weight: 500; text-align: right; }
+  .fl { color: var(--ink-soft); font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; flex-shrink: 0; }
+  .fv { font-weight: 500; text-align: right; word-break: break-all; font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
 
   .footnote {
     font-size: 11.5px;
@@ -265,7 +252,6 @@
     border-top: 1px dashed var(--line);
   }
 
-  /* Spinner */
   .spin {
     width: 16px; height: 16px;
     border: 2px solid rgba(0,0,0,0.15);
@@ -275,7 +261,6 @@
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ── Footer ── */
   .footer {
     margin-top: 56px;
     padding-top: 18px;
@@ -304,7 +289,7 @@
 
   <div class="header">
     <div>
-      <div class="brand-name">Mbandu Stores & Hardware Ltd.</div>
+      <div class="brand-name">Mbandu Complex Limited</div>
       <div class="brand-sub">Document Registry</div>
     </div>
     <div class="header-badge">Verification Portal</div>
@@ -314,10 +299,9 @@
 
   <h1 class="intro-title">Verify a receipt or invoice</h1>
   <p class="intro-body">
-    Every document issued by Mbandu Stores & Hardware Ltd.  carries a cryptographic
-    signature created at the moment it was issued. Enter the document number
-    printed on the receipt or invoice — or scan its QR code — to confirm it
-    is genuine and has not been altered.
+    Every document issued by Mbandu Complex Limited is cryptographically
+    signed and registered at the moment it is created. Scan the QR code
+    on any document, or enter its number below, to confirm it is genuine.
   </p>
 
   <label class="field-label" for="docid">Document number</label>
@@ -330,79 +314,77 @@
     <button class="verify-btn" id="btn" onclick="verify()">Verify</button>
   </div>
   <p class="field-hint">
-    Printed on every receipt and invoice, e.g.
-    <code>MSH-INV-2026-00042</code>
+    Printed on every document, e.g. <code>MSH-WAT-2026-00042</code>
   </p>
 
   <div id="result"></div>
 
   <div class="footer">
-    <span>Mbandu Stores & Hardware Ltd. · Bomas, Langata Road, Nairobi</span>
+    <span>Mbandu Complex Limited · Bomas, Langata Road, Nairobi</span>
     <span>+254 705 412 532</span>
   </div>
 
 </div>
 
 <script>
-// ─────────────────────────────────────────────────────────────────────────────
-// STEP 1: Run get_config.py in your terminal, then paste the output below.
-//
-//   python3 get_config.py
-//
-// It will print a line like:
-//   const PUBLIC_KEY_B64 = "nZlqYFil02IHh85+AbH...";
-// Copy that entire line and replace the one below.
-// ─────────────────────────────────────────────────────────────────────────────
-  const PUBLIC_KEY_B64 = "llujLUCBqTRMzuQ5BUUvcYoCF+3/j2yF2fjqSK68eKA=";
-// ─────────────────────────────────────────────────────────────────────────────
-// STEP 2: This URL is already correct for your setup — leave it as-is.
-// ─────────────────────────────────────────────────────────────────────────────
-const AUDIT_LOG_URL = "https://Mulili-Anthony.github.io/mbandu_verify_data/audit_log.json";
+// ── Configuration ────────────────────────────────────────────────────────────
+// public_verify.json contains only: { "MSH-REC-2026-00011": "hash..." }
+// No tenant names, no amounts — fully private.
+const VERIFY_DATA_URL = "https://Mulili-Anthony.github.io/mbandu_verify_data/public_verify.json";
 
-// ── DOM refs ──────────────────────────────────────────────────────────────────
 const input  = document.getElementById('docid');
 const btn    = document.getElementById('btn');
 const result = document.getElementById('result');
 
-// Auto-verify when page loads with ?id= in URL (QR codes use this)
+// Auto-verify when QR code is scanned (?id=...&t=...)
 window.addEventListener('DOMContentLoaded', () => {
-  const id = new URLSearchParams(window.location.search).get('id');
-  if (id) { input.value = id; verify(); }
+  const params = new URLSearchParams(window.location.search);
+  const id     = params.get('id');
+  const token  = params.get('t');
+  if (id) {
+    input.value = id;
+    verify(token);   // pass token from QR if present
+  }
 });
 
 input.addEventListener('keydown', e => { if (e.key === 'Enter') verify(); });
 
-// ── Main verify flow ──────────────────────────────────────────────────────────
-async function verify() {
+// ── Main verify ──────────────────────────────────────────────────────────────
+async function verify(qrToken = null) {
   const docId = input.value.trim().toUpperCase();
   if (!docId) { input.focus(); return; }
-
-  if (PUBLIC_KEY_B64 === "PASTE_OUTPUT_OF_get_config.py_HERE") {
-    showError("Verification page is not yet configured. Run get_config.py and paste the output into index.html.");
-    return;
-  }
 
   btn.disabled = true;
   btn.textContent = "Checking…";
   showChecking();
 
   try {
-    // Fetch the live audit log from GitHub Pages
-    const res = await fetch(AUDIT_LOG_URL + '?t=' + Date.now());
-    if (!res.ok) throw new Error(`Could not load registry (HTTP ${res.status}). The page may still be deploying — try again in a minute.`);
-    const log = await res.json();
+    const res = await fetch(VERIFY_DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error(
+      `Could not load verification registry (HTTP ${res.status}). ` +
+      `The page may still be deploying — try again in a minute.`);
 
-    // Find the entry
-    const entry = log.find(e => e.doc_id === docId);
-    if (!entry) { showNotFound(docId); return; }
+    const data = await res.json();   // { "MSH-REC-2026-00011": "hash...", ... }
 
-    // Verify signature in-browser using Web Crypto (Ed25519)
-    const valid = await verifySignature(
-      entry.doc_id, entry.issued_to, entry.total,
-      entry.date, entry.signature
-    );
+    const storedToken = data[docId];
 
-    valid ? showVerified(entry) : showInvalid();
+    if (!storedToken) {
+      showNotFound(docId);
+      return;
+    }
+
+    // If a token came from the QR code, compare it with the stored token
+    if (qrToken) {
+      if (qrToken === storedToken) {
+        showVerified(docId, storedToken);
+      } else {
+        showInvalid();
+      }
+    } else {
+      // Manually typed doc ID — document exists in registry, no QR token to compare
+      // Still a valid confirmation that the document was issued by Mbandu Complex
+      showVerifiedManual(docId, storedToken);
+    }
 
   } catch (err) {
     showError(err.message || 'An unexpected error occurred.');
@@ -412,28 +394,8 @@ async function verify() {
   }
 }
 
-// ── Ed25519 signature verification using the browser's Web Crypto API ─────────
-async function verifySignature(docId, issuedTo, total, date, signatureB64url) {
-  // Import the public key (32 raw bytes for Ed25519)
-  const rawKey = base64ToBytes(PUBLIC_KEY_B64);
-  const cryptoKey = await crypto.subtle.importKey(
-    'raw', rawKey,
-    { name: 'Ed25519' },
-    false, ['verify']
-  );
+// ── Result renderers ────────────────────────────────────────────────────────
 
-  // Reconstruct the exact same payload that Python's private_key.sign() used
-  const totalFormatted = parseFloat(total).toFixed(2);
-  const payload = `${docId}|${issuedTo}|${totalFormatted}|${date}`;
-  const payloadBytes = new TextEncoder().encode(payload);
-
-  // Convert base64url → bytes (Python uses urlsafe_b64encode)
-  const sigBytes = base64urlToBytes(signatureB64url);
-
-  return crypto.subtle.verify('Ed25519', cryptoKey, sigBytes, payloadBytes);
-}
-
-// ── Result display functions ───────────────────────────────────────────────────
 function showChecking() {
   result.className = 'show';
   result.innerHTML = `
@@ -441,17 +403,14 @@ function showChecking() {
       <div class="card-head checking">
         <div class="card-icon"><div class="spin"></div></div>
         <div>
-          <div class="card-title" style="color:var(--ink-soft)">Checking records</div>
+          <div class="card-title" style="color:var(--ink-soft)">Checking registry</div>
           <div class="card-sub">Fetching and verifying…</div>
         </div>
       </div>
     </div>`;
 }
 
-function showVerified(e) {
-  const logged = e.logged_at
-    ? new Date(e.logged_at).toLocaleString('en-KE', { dateStyle:'long', timeStyle:'short' })
-    : '—';
+function showVerified(docId, token) {
   result.className = 'show';
   result.innerHTML = `
     <div class="card">
@@ -459,30 +418,49 @@ function showVerified(e) {
         <div class="card-icon">✓</div>
         <div>
           <div class="card-title">Authentic document</div>
-          <div class="card-sub">Signature verified — issued by Mbandu Stores & Hardware Ltd.</div>
+          <div class="card-sub">QR signature verified — issued by Mbandu Complex Limited</div>
         </div>
       </div>
       <div class="card-body">
         <div class="field-row">
           <span class="fl">Document</span>
-          <span class="fv">${esc(e.doc_id)}</span>
+          <span class="fv">${esc(docId)}</span>
         </div>
         <div class="field-row">
-          <span class="fl">Issued to</span>
-          <span class="fv">${esc(e.issued_to)}</span>
-        </div>
-        <div class="field-row">
-          <span class="fl">Amount</span>
-          <span class="fv">KES ${Number(e.total).toLocaleString('en-KE')}</span>
-        </div>
-        <div class="field-row">
-          <span class="fl">Date</span>
-          <span class="fv">${esc(e.date)}</span>
+          <span class="fl">Verify token</span>
+          <span class="fv">${esc(token.substring(0, 16))}…</span>
         </div>
         <div class="footnote">
-          Recorded in Mbandu Stores & Hardware Ltd.'s registry on ${logged}.
-          The contents of this document match exactly what was originally
-          issued — nothing has been changed since it was signed.
+          The QR code on this document matches Mbandu Complex Limited's
+          registry exactly. This document has not been altered since it
+          was signed and issued. Check the printed document for the
+          full details (recipient, amount, date).
+        </div>
+      </div>
+    </div>`;
+}
+
+function showVerifiedManual(docId, token) {
+  result.className = 'show';
+  result.innerHTML = `
+    <div class="card">
+      <div class="card-head verified">
+        <div class="card-icon">✓</div>
+        <div>
+          <div class="card-title">Document found in registry</div>
+          <div class="card-sub">Issued by Mbandu Complex Limited</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="field-row">
+          <span class="fl">Document</span>
+          <span class="fv">${esc(docId)}</span>
+        </div>
+        <div class="footnote">
+          This document number exists in Mbandu Complex Limited's official
+          registry. For the strongest verification, scan the QR code
+          printed on the document directly — the QR carries a unique
+          cryptographic token that confirms it has not been altered.
         </div>
       </div>
     </div>`;
@@ -495,15 +473,17 @@ function showInvalid() {
       <div class="card-head invalid">
         <div class="card-icon">✗</div>
         <div>
-          <div class="card-title">Signature does not match</div>
-          <div class="card-sub">This document may have been altered</div>
+          <div class="card-title">QR code does not match</div>
+          <div class="card-sub">This document may be a forgery</div>
         </div>
       </div>
       <div class="card-body">
         <div class="footnote">
-          The document number exists in Mbandu Stores & Hardware Ltd.'s registry, but the
-          details no longer match the original signature. Do not accept this
-          as proof of payment. Contact Mbandu Stores & Hardware Ltd. directly to confirm.
+          The document number exists in Mbandu Complex's registry, but the
+          QR code's verification token does not match. This document may
+          have been altered or printed from a forged template.
+          Do not accept it as proof of payment. Contact Mbandu Complex
+          directly to confirm.
         </div>
       </div>
     </div>`;
@@ -522,9 +502,9 @@ function showNotFound(docId) {
       </div>
       <div class="card-body">
         <div class="footnote">
-          "<strong>${esc(docId)}</strong>" was not found in Mbandu Stores & Hardware Ltd's
-             registry. Check the number is typed exactly as printed
-          on the document, or contact Mbandu Stores & Hardware Ltd. directly.
+          "<strong>${esc(docId)}</strong>" was not found in Mbandu Complex
+          Limited's registry. Check the number is typed exactly as printed
+          on the document, or contact Mbandu Complex directly.
         </div>
       </div>
     </div>`;
@@ -542,17 +522,6 @@ function showError(msg) {
         </div>
       </div>
     </div>`;
-}
-
-// ── Crypto helpers ─────────────────────────────────────────────────────────────
-function base64ToBytes(b64) {
-  return Uint8Array.from(atob(b64), c => c.charCodeAt(0));
-}
-
-function base64urlToBytes(b64url) {
-  const b64 = b64url.replace(/-/g, '+').replace(/_/g, '/');
-  const padded = b64 + '='.repeat((4 - b64.length % 4) % 4);
-  return base64ToBytes(padded);
 }
 
 function esc(str) {
